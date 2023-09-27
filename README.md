@@ -7,10 +7,11 @@ Bunny texture is from Raylib example https://github.com/raysan5/raylib/blob/mast
 Code is from Raylib example, slightly modified.
 
 Testing PC:
-OS: Win 11 x64
-CPU: Ryzen 7800X3D
-GPU: AMD 7900XT
-RAM: 32GB DDR5 6000MHz
+
+- OS: Win 11 x64
+- CPU: Ryzen 7800X3D
+- GPU: AMD 7900XT
+- RAM: 32GB DDR5 6000MHz
 
 
 | Framework  | Language | Runtime | Rabbit Count 59FPS |
