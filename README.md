@@ -6,6 +6,8 @@ Bunny texture is from Raylib example https://github.com/raysan5/raylib/blob/mast
 
 Code is from Raylib example, slightly modified.
 
+All projects are running in 800x600 window, with uncapped FPS and Vsync turned off.
+
 Testing PC:
 
 - OS: Win 11 x64
