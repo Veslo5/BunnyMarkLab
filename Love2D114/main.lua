@@ -13,32 +13,21 @@ function love.load()
 
     screenWidth = love.graphics.getWidth()
     screenHeight = love.graphics.getHeight()
-
-    for i = 1, 200000, 1 do
-        table.insert(bunnies, {
-            x = love.mouse.getX(),
-            y = love.mouse.getY(),
-            speedx = love.math.random(-250, 250) / 60.0,
-            speedy = love.math.random(-250, 250) / 60.0,
-            r = 1 / love.math.random(50, 255),
-            g = 1 / love.math.random(80, 255),
-            b = 1 / love.math.random(100, 255)
-        })
-        bunniesCount = bunniesCount + 1
-    end
+	
+	love.window.setVSync(0)
 end
 
 function love.update()
     if love.mouse.isDown(1) then
-        for i = 1, 101, 1 do
+        for i = 1, 100, 1 do
             table.insert(bunnies, {
                 x = love.mouse.getX(),
                 y = love.mouse.getY(),
                 speedx = love.math.random(-250, 250) / 60.0,
                 speedy = love.math.random(-250, 250) / 60.0,
-                r = 1 / love.math.random(50, 255),
-                g = 1 / love.math.random(80, 255),
-                b = 1 / love.math.random(100, 255)
+                r = love.math.random(50, 255) / 255,
+                g = love.math.random(80, 255) / 255,
+                b = love.math.random(100, 255) / 255
             })
             bunniesCount = bunniesCount + 1
         end
@@ -64,12 +53,10 @@ end
 function love.draw()
     love.graphics.setBackgroundColor(1, 1, 1, 1)
 
-    love.graphics.setColor(1, 1, 1)
-
     -- for _, bunny in ipairs(bunnies) do
     for i = 1, bunniesCount, 1 do
         local bunny = bunnies[i]
-        --love.graphics.setColor(bunny.r, bunny.g, bunny.b, 1)
+        love.graphics.setColor(bunny.r, bunny.g, bunny.b)
         love.graphics.draw(bunnyTexture, bunny.x, bunny.y)
     end
 

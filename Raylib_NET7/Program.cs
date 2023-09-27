@@ -24,23 +24,7 @@ public class Program
         int screenWidth = Raylib.GetScreenWidth();
         int screenHeight = Raylib.GetScreenHeight();
 
-        Raylib.SetTargetFPS(60);
-
-        for (int i = 0; i < 200000; i++)
-        {
-            var pos = Raylib.GetMousePosition();
-            var bunny = new Bunny()
-            {
-                PositionX = pos.X,
-                PositionY = pos.Y,
-                SpeedX = (float)Raylib.GetRandomValue(-250, 250) / 60.0f,
-                SpeedY = (float)Raylib.GetRandomValue(-250, 250) / 60.0f,
-                Color = new Color(Raylib.GetRandomValue(50, 240), Raylib.GetRandomValue(80, 240), Raylib.GetRandomValue(100, 240), 255)
-            };
-            bunnies.Add(bunny);
-
-            bunniesCount++;
-        }
+        // Raylib.SetTargetFPS(60);
 
         while (!Raylib.WindowShouldClose())
         {
