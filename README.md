@@ -1,7 +1,9 @@
 # BunnyMarkLab
 
 Just a funny personal project. Micro testing, try and error of "famous" Bunny Mark 
+
 Bunny texture is from Raylib example https://github.com/raysan5/raylib/blob/master/examples/textures/textures_bunnymark.c
+
 Code is from Raylib example, slightly modified.
 
 Testing PC:
