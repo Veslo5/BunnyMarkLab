@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "process",
+			"label": "C/C++: cl.exe build x64",
+			"command": "cl.exe",
+			"args": [
+				"/Zi",
+				"/EHsc",
+				"/nologo",
+				"/O2",
+				"/Fo:bin\\",
+				"/Fd:bin\\",
+				"/Fe${workspaceFolder}\\bin\\main.exe",
+				"/I${workspaceFolder}\\include\\raylib450x64",
+				"/I${workspaceFolder}\\include\\raylibcpp",
+				"${workspaceFolder}\\main.cpp",
+				"/link ${workspaceFolder}\\lib\\raylib.lib shell32.lib msvcrt.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winmm.lib"
+			],
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build",
+			"detail": "compiler: cl.exe"
+		}
+	]
+}

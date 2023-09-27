@@ -20,5 +20,6 @@ Testing PC:
 | ------------- | ------------- | ------------- |  ------------- |
 | Love2D 11.4 (x64)  | Lua  | LuaJIT | 130000 |
 | Raylib 4.5 (Raylib_cs)  | C# | NET 7 Release x64 | 290000 |
-| Monogame 3.8.1 (DesktopGL) | C# | NET 7 Release x64| 535200 |
-| Monogame 3.8.1 (Dx) | C# | NET 7 Release x64| 505700 |
+| Raylib 4.5 (Raylib_cpp) | C++ | MSVC /O2 x64 | 303500 |
+| Monogame 3.8.1 (DesktopGL) | C# | NET 7 Release x64 | 535200 |
+| Monogame 3.8.1 (Dx) | C# | NET 7 Release x64 | 505700 |
